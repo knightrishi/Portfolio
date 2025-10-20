@@ -11,8 +11,13 @@ import { color } from 'framer-motion';
 
 function App() {
   return (
-    <div>
-    <h1 style={{color:'red'}}>HEllo from space</h1>
+    <div className="bg-cream text-choco">
+    <Navbar />
+    <HeroSection />
+    <About />
+    < Contact/>
+    <Footer />
+    <Projects />
 </div>
   );
 }

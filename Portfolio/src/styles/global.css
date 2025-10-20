@@ -1,8 +1,12 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-body {
-  @apply min-h-screen flex items-center justify-center;
-  font-family: 'DM Sans', sans-serif; /* optional: your font */
+@theme{
+  --color-cream: #fefbe9;
+  --color-choco: #4b3f35;
+  --color-sienna: #a0522d;
+  --color-mustard: #ffdb58;
+  --color-teal: #008080;
 }
-
-
+:root {
+  color-scheme: light dark;
+}
