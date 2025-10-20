@@ -1,0 +1,8 @@
+@import 'tailwindcss';
+
+body {
+  @apply min-h-screen flex items-center justify-center;
+  font-family: 'DM Sans', sans-serif; /* optional: your font */
+}
+
+

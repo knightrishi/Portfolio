@@ -7,18 +7,13 @@ import About from './sections/About';
 import Projects from './sections/Projects';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
+import { color } from 'framer-motion';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <HeroSection />
-      <About />
-      <Projects />
-      <Contact />
-      <Footer />
-      
-    </>
+    <div>
+    <h1 style={{color:'red'}}>HEllo from space</h1>
+</div>
   );
 }
 
