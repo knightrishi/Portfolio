@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Press+Start+2P&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+@import "tailwindcss";
+
+/* Define your custom theme tokens */
+@theme {
+  --color-cream: #fefbe9;   /* soft neutral background */
+  --color-choco: #4b3f35;   /* warm brown tone */
+  --color-sienna: #a0522d;  /* earthy accent */
+  --color-mustard: #ffdb58; /* retro highlight */
+  --color-teal: #008080;    /* balance tone */
+  
+  --font-pixel: "Press Start 2P", cursive;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+/* Root styling */
+:root {
+  color-scheme: light dark;
+  background-color: var(--color-choco);
+  color: var(--color-cream);
+}
+.neon-text {
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff, 0 0 20px #ff00ff;
+}
+/* Optional: text selection and scroll behavior */
+::selection {
+  background: var(--color-mustard);
+  color: var(--color-choco);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font imports */
+
