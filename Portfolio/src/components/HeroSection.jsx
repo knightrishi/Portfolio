@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col justify-center items-center h-[80vh] text-center">
+    <section className="flex flex-col justify-center items-center h-[40vh] text-center">
       <motion.h2
-        className="text-4xl font-pixel text-mustard mb-4"
-        initial={{ opacity: 0, y: 40 }}
+        className="text-4xl font-pixel text-mustard mb-2"
+        initial={{ opacity: 0, y:40}}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
