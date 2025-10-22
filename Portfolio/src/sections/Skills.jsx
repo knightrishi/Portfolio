@@ -1,8 +1,8 @@
 
 function Skills() {
   return(
-    <section id='skillss' className='py-20 border-t border-gray-800'>
-      <h3 className='text-3xl font-semibold font-pixel text-[#00CED1] mb-4'>My Skills </h3>
+    <section id='skillss' className='py-20 border-t border-none bg-[#0A2540]'>
+      <h3 className='text-3xl font-semibold font-pixel text-[#cream] mb-4'>My Skills </h3>
     
         <ul  className="max-w-2xl mx-auto space-y-3 text-cream">
             <li>Languages:C,C++,Java,GOLang(learning),JavaScript</li>
