@@ -19,17 +19,18 @@
 
 /* Root styling */
 :root {
-  color-scheme: light dark;
-  background-color: var(--color-choco);
+  color-scheme: light #c6e8f5;
+  background-color: var(--color-sky-900);
   color: var(--color-cream);
 }
 .neon-text {
   text-shadow: 0 0 5px #ff00ff, 0 0 10px #00ffff, 0 0 20px #ff00ff;
-}
+} 
+
 /* Optional: text selection and scroll behavior */
 ::selection {
-  background: var(--color-mustard);
-  color: var(--color-choco);
+  background: var(--color-teal);
+  color: var(--color-cream);
 }
 
 html {

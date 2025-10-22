@@ -1,16 +1,33 @@
+import github from "../images/github.png";
+import linkedin from "../images/linkedin.png";
+import resume from "../images/resume.png";
+import communication from "../images/communication.png";
+
 function Contact() {
   return (
-    <section id="contact" className="min-h-screen flex flex-col items-center justify-center">
-      <h2 className="text-4xl font-serif mb-6">Contact Me</h2>
-      <p className="text-lg mb-4">
-        Let's build something beautiful together.
-        </p>
-      <a
-        href="arnav.ara05@gmail.com"
-        className="bg-sienna text-red px-6 py-2 rounded-lg hover:bg-mustard hover:text-choco transition"
-      >
-        Say Hello
-      </a>
+    <section id="contact" className="py-20 border-t border-none bg-[#0A2540]">
+      <h3 className="text-3xl font-semibold font-pixel text-[cream] mb-4">Socials</h3>
+      <div className="flex justify-center gap-6">
+        <a href="https://github.com/knightrishi" target="_blank" rel="noopener noreferrer">
+          <img src={github} className="w-16 h-16 hover:shadow-[0_0_10px_#00CED1] transition-shadow" alt="GitHub" />
+        </a>
+
+        <a href="https://www.linkedin.com/in/arnav-singh-851476318" target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} className="w-16 h-16 hover:shadow-[0_0_10px_#00CED1] transition-shadow" alt="LinkedIn" />
+        </a>
+
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <img src={resume} className="w-16 h-16 hover:shadow-[0_0_10px_#00CED1] transition-shadow" alt="Resume" />
+        </a>
+
+        <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=arnav.ara05@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+          <img src={communication} className="w-16 h-16 hover:shadow-[0_0_10px_#00CED1] transition-shadow" alt="Email" />
+        </a>
+      </div>
     </section>
   );
 }
