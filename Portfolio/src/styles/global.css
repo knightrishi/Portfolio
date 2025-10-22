@@ -19,8 +19,8 @@
 
 /* Root styling */
 :root {
-  color-scheme: light #1A1A1A;
-  background-color: var(--color-choco);
+  color-scheme: light #c6e8f5;
+  background-color: var(--color-sky-900);
   color: var(--color-cream);
 }
 .neon-text {
