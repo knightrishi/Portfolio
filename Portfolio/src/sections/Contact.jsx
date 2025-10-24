@@ -6,8 +6,8 @@ import communication from "../images/communication.png";
 function Contact() {
   return (
     <section id="contact" className="py-20 border-t border-none bg-[#0A2540]">
-      <h3 className="text-3xl font-semibold font-pixel text-[cream] mb-4">Socials</h3>
-      <div className="flex justify-center gap-6">
+      <h3 className="text-3xl font-semibold font-pixel text-[cream] sm:text-5xl md:text-5xl mb-4">Socials</h3>
+      <div className="flex justify-center gap-6 sm:text-5xl md:text-5xl">
         <a href="https://github.com/knightrishi" target="_blank" rel="noopener noreferrer">
           <img src={github} className="w-16 h-16 hover:shadow-[0_0_10px_#00CED1] transition-shadow" alt="GitHub" />
         </a>
