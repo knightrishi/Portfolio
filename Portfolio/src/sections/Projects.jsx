@@ -10,29 +10,35 @@ function ProjectCard({ title, description, tech, link, image }) {
       whileHover={{ scale: 1.05, y: -10 }}
       whileTap={{ scale: 0.98 }}
       transition={{ type: "spring", stiffness: 150 }}
-      className="relative bg-[#0b0b0d] border border-[#00CED1]/30 rounded-2xl shadow-[0_0_25px_#00CED1] p-5 hover:shadow-[0_0_40px_#00CED1] hover:border-[#01f7b5] duration-300 w-full sm:w-[300px] md:w-[350px] m-4 text-left"
+      className="relative bg-[#0b0b0d] border border-[#00CED1]/30 rounded-2xl shadow-[0_0_25px_#00CED1] p-5 hover:border-[#01f7b5] duration-300 w-full sm:w-[300px] md:w-[350px] m-4 text-left
+                 flex flex-col justify-between h-[480px]" // fixed height
     >
-      <img
-        src={image}
-        alt={title}
-        className="rounded-xl w-full h-40 object-cover mb-4 opacity-90 hover:opacity-100 transition"
-      />
-      <h4 className="text-xl sm:text-2xl font-bold text-[#00E0FF] font-pixel mb-2">
-        {title}
-      </h4>
-      <p className="text-[#B0EFFF] text-sm sm:text-base mb-3 leading-snug">{description}</p>
-      <p className="text-[#6EE7FF] text-xs sm:text-sm mb-4">⚙️ {tech}</p>
+      <div>
+        <img
+          src={image}
+          alt={title}
+          className="rounded-xl w-full h-40 object-cover mb-4 opacity-90 hover:opacity-100 transition"
+        />
+        <h4 className="text-xl sm:text-2xl font-bold text-[#00E0FF] font-pixel mb-2">
+          {title}
+        </h4>
+        <p className="text-[#B0EFFF] text-sm sm:text-base mb-3 leading-snug">
+          {description}
+        </p>
+        <p className="text-[#6EE7FF] text-xs sm:text-sm mb-4">⚙️ {tech}</p>
+      </div>
       <a
         href={link}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block text-[#0b0b0d] bg-[#00E0FF] hover:bg-[#0AE6E6] font-semibold px-4 py-2 rounded-lg shadow-lg transition duration-300 text-sm sm:text-base"
+        className="inline-block text-[#0b0b0d] bg-[#00E0FF] hover:bg-[#0AE6E6] font-semibold px-4 py-2 rounded-lg shadow-lg transition duration-300 text-sm sm:text-base mt-auto"
       >
         View Project
       </a>
     </motion.div>
   );
 }
+
 
 export default function Projects() {
   const projects = [
@@ -64,7 +70,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-20 border-t border-gray-800 bg-[#081826] text-center"
+      className="py-20 border-t border-gray-800 hover:shadow-[0_0_30px_#00CED1] bg-[#081826] text-center"
     >
       <h3 className="text-3xl sm:text-4xl md:text-5xl font-semibold font-pixel text-[cream] mb-10">
         All My Projects

@@ -2,7 +2,7 @@ function About() {
   return (
     <section
       id='about'
-      className='py-20 bg-[#081826] flex flex-col justify-center items-center'
+      className='py-20 bg-[#081826] flex flex-col justify-center hover:shadow-[0_0_30px_#00CED1] items-center'
     >
       <h3 className='text-3xl sm:text-4xl md:text-5xl font-semibold font-pixel text-[cream] mb-6 text-center'>
         About Me

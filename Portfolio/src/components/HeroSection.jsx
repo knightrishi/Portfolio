@@ -8,6 +8,8 @@ import herostill1 from "../utils/herostill1.png"
 
 
 const HeroSection = () => {
+
+  
   const [isRunning ,setIsRunning]=useState(true);
   const handleClick =()=>{
 setIsRunning(true);
@@ -16,7 +18,7 @@ setTimeout(()=> setIsRunning(false),100000);
   return (
     <section
       id="hero" 
-      className="min-h-[60vh] flex flex-col justify-center items-center text-center space-y-6 bg-[#0A2540]"
+      className="min-h-[60vh] flex flex-col justify-center items-center text-center  hover:shadow-[0_0_30px_#00CED1] space-y-6 bg-[#0A2540]"
     >
       <div className="animate-hero-entry" onClick={handleClick}>
         <img
