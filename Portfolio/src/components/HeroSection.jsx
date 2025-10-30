@@ -45,9 +45,9 @@ setTimeout(()=> setIsRunning(false),100000);
         transition={{ delay: 0.6, duration: 1 }}
         className="text-[#FFFFFF] text-sm sm:text-base md:text max-w-xl px-4 sm:px-0 text-center"
       >
-        <p>I am a passionate software developer who believes code can have emotion — a bridge between
-          machines and meaning.I chase elegance in logic, and beauty in simplicity.
-          I believe i have a long way ahead but i am ready to handel the voilent waves of the code and triumph this coding voyage.</p>
+        <p className="text-left">I see code as rhythm — lines that breathe, logic that moves. Every function hums with intent, every interface flows like music.
+As an engineer of logic and flow, I design intelligent networks, real-time systems, and experiences that blend Java, MERN, and machine insight.
+From backend pulse to front-end grace, I craft systems that feel alive — built to connect, respond, and evolve.</p>
        
       </motion.p>
 

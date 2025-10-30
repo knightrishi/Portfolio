@@ -17,6 +17,7 @@ function App() {
 
 
       <main className='p-4'>
+        <Header />
       <HeroSection />
       <About />   
       <Skills />
