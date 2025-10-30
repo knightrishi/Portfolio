@@ -8,6 +8,8 @@ import herostill1 from "../utils/herostill1.png"
 
 
 const HeroSection = () => {
+
+  
   const [isRunning ,setIsRunning]=useState(true);
   const handleClick =()=>{
 setIsRunning(true);
@@ -16,15 +18,15 @@ setTimeout(()=> setIsRunning(false),100000);
   return (
     <section
       id="hero" 
-      className="min-h-[60vh] flex flex-col justify-center items-center text-center space-y-6 bg-[#0A2540]"
+      className="min-h-[60vh] flex flex-col justify-center items-center text-center  hover:shadow-[0_0_30px_#00CED1] space-y-6 bg-[#0A2540]"
     >
       <div className="animate-hero-entry" onClick={handleClick}>
         <img
           src={isRunning ? herorun : herostill1}
           alt="Retro Hero"
-          className="w-28 h-auto drop-shadow-[0_0_15px_#00CED1]"
+          className="w-24 sm:w-28 md:w-32 h-auto drop-shadow-[0_0_15px_#00CED1]"
         />
-         <h1 className="text-3xl sm:text-4xl font-bold font-pixel text-[cream] mt-4">
+         <h1 className="text-3xl  sm:text-4xl md:text-5xl lg:text-4xl  font-bold font-pixel text-[cream] mt-4">
           <Typewriter
             words={["Hi... I am Arnav Singh"]}
             loop={100}          // type once
@@ -41,7 +43,7 @@ setTimeout(()=> setIsRunning(false),100000);
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 1 }}
-        className="text-[#FFFFFF] text-sm sm:text-base max-w-xl"
+        className="text-[#FFFFFF] text-sm sm:text-base md:text max-w-xl px-4 sm:px-0 text-center"
       >
         <p>I am a passionate software developer who believes code can have emotion — a bridge between
           machines and meaning.I chase elegance in logic, and beauty in simplicity.
