@@ -4,11 +4,13 @@ import { Typewriter } from "react-simple-typewriter";
 import herorun from "../utils/herorun.gif";
 import herostill1 from "../utils/herostill1.png";
 import { div, image, img } from "framer-motion/client";
+import Snowfall from "react-snowfall";
 
 const HeroSection = () => {
 return (
+ 
   <div className="bg-[#13375c] border-white hover:shadow-[0_0_30px_#00CED1] w-full py-6 px-6 md:min-h-[60vh] flex items-center justify-center">
-
+< Snowfall color="white"/>
   {/*left side*/}
    <motion.div
         initial={{ opacity: 0, x: -40 }}
