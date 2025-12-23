@@ -51,7 +51,7 @@ So wrap the JS expression in {}*/}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            viewport={{ once: true }}
+           viewport={{ once: true }}
             className="bg-[#0d2037] p-4 rounded-xl shadow-lg flex flex-col items-center justify-center hover:shadow-orange-300/30 transition"
           >
             <img src={item.logo} alt={item.name} className="h-12 mb-2" />
